@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by liaomiao on 10/29/2016.
+ * Created by joyfeng on 10/29/2016.
  */
 public class GoogleLC22GenerateParentheses {
     // using dfs

@@ -1,7 +1,7 @@
 package main.java;
 
 /**
- * Created by liaomiao on 10/24/2016.
+ * Created by joyfeng on 10/24/2016.
  */
 public class GoogleLC200NumberofIslands {
     public int numIslands(char[][] grid) {

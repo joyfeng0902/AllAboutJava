@@ -3,7 +3,7 @@ package main.java;
 import java.util.Arrays;
 
 /**
- * Created by liaomiao on 10/28/2016.
+ * Created by joyfeng on 10/28/2016.
  */
 public class GoogleLC259_3SumSmaller {
     public int threeSumSmaller(int[] nums, int target) {

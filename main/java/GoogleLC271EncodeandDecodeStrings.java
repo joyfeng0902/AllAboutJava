@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by liaomiao on 10/27/2016.
+ * Created by joyfeng on 10/27/2016.
  */
 public class GoogleLC271EncodeandDecodeStrings {
     // Encodes a list of strings to a single string.

@@ -3,7 +3,7 @@ package main.java;
 import java.util.Arrays;
 
 /**
- * Created by liaomiao on 10/26/2016.
+ * Created by joyfeng on 10/26/2016.
  */
 public class GoogleLC274HIndex {
     // Time complexity : O(n\log n)O(nlogn). Comparison sorting

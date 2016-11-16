@@ -1,7 +1,7 @@
 package main.java;
 
 /**
- * Created by liaomiao on 10/24/2016.
+ * Created by joyfeng on 10/24/2016.
  */
 class Room<T> {
     // if use Object instead of T, if a user accidentally add "60", compiler does not know it is a problem.

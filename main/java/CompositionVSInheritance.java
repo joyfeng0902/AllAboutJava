@@ -1,7 +1,7 @@
 package main.java;
 
 /**
- * Created by liaomiao on 10/25/2016.
+ * Created by joyfeng on 10/25/2016.
  */
 interface Attack {
     public void move();

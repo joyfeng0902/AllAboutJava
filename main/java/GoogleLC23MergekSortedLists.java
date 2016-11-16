@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
- * Created by liaomiao on 10/25/2016.
+ * Created by joyfeng on 10/25/2016.
  */
 public class GoogleLC23MergekSortedLists {
     public ListNode mergeKLists(ListNode[] lists) {

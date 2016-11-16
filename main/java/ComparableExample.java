@@ -3,7 +3,7 @@ package main.java;
 import java.util.TreeSet;
 
 /**
- * Created by liaomiao on 10/24/2016.
+ * Created by joyfeng on 10/24/2016.
  */
 class DogC implements Comparable<DogC>{
     int size;

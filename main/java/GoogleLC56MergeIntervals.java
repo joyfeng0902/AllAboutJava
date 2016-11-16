@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * Created by liaomiao on 10/25/2016.
+ * Created by joyfeng on 10/25/2016.
  */
 class Interval {
     int start;

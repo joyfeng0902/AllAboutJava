@@ -3,7 +3,7 @@ package main.java;
 import java.util.Stack;
 
 /**
- * Created by liaomiao on 10/26/2016.
+ * Created by joyfeng on 10/26/2016.
  */
 public class GoogleLC230KthSmallestElementinaBST {
     // in-order traversal

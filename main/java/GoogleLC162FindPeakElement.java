@@ -1,7 +1,7 @@
 package main.java;
 
 /**
- * Created by liaomiao on 10/27/2016.
+ * Created by joyfeng on 10/27/2016.
  */
 public class GoogleLC162FindPeakElement {
     public int findPeakElement(int[] nums) {
