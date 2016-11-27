@@ -3,10 +3,43 @@ package main.java;
 public class LinkedList {
     ListNode head;
 
+    // Inserts a new Node at front of the list.
     void push(int new_data) {
         ListNode newNode = new ListNode(new_data);
         newNode.next = head;
         head = newNode;
+    }
+
+    // Inserts a new node after the given prev_node.
+    void insertAfter(ListNode prev_node, int new_data) {
+        if (prev_node == null) {
+            System.out.println("The given previous node cannot be null");
+            return;
+        }
+        ListNode newNode = new ListNode(new_data);
+        newNode.next = prev_node.next;
+        prev_node.next = newNode;
+    }
+
+    // Appends a new node at the end.
+    void append(int new_data) {
+        ListNode newNode = new ListNode(new_data);
+        /* If the Linked List is empty, then make the
+           new node as head */
+        if (head == null) {
+            head = new ListNode(new_data);
+            return;
+        }
+
+        // the new node is going to be the last one
+        newNode.next = null;
+        // Find the last node
+        ListNode last = head;
+        while(head.next != null) {
+            head = head.next;
+        }
+
+        last.next = newNode;
     }
 
     void printListNodes() {

@@ -19,7 +19,7 @@ public class GoogleLC23MergekSortedLists {
             }
         });
 
-        for (ListNode list : lists) {  // lisst is the head node of each list
+        for (ListNode list : lists) {  // list is the head node of each list
             if (list != null) {  // do not forget to check
                 queue.offer(list);
             }

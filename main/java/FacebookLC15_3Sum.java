@@ -9,16 +9,16 @@ import java.util.List;
  */
 public class FacebookLC15_3Sum {
     public List<List<Integer>> threeSum(int[] nums) {
-        List<List<Integer>>res = new ArrayList<List<Integer>>();
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
         if (nums == null || nums.length < 3) {
             return res;
         }
         Arrays.sort(nums);  // sort the array
         int length = nums.length;
         for (int i = 0; i < length - 2; i++) {
-            if (i == 0 || nums[i] > nums[i-1]) {
-                int low = i+1, high = length-1;
-                while(low < high) {
+            if (i == 0 || nums[i] > nums[i - 1]) {
+                int low = i + 1, high = length - 1;
+                while (low < high) {
                     int sum = nums[low] + nums[high];
                     if (sum > -nums[i]) {
                         high--;
@@ -33,11 +33,12 @@ public class FacebookLC15_3Sum {
                         low++;
                         high--;
 
+                        // now we have found a solution
                         // handle duplicates
-                        while(low < high && nums[low-1] == nums[low]) {
+                        while (low < high && nums[low - 1] == nums[low]) {
                             low++;
                         }
-                        while(low < high && nums[high] == nums[high+1]) {
+                        while (low < high && nums[high] == nums[high + 1]) {
                             high--;
                         }
                     }
@@ -52,5 +53,4 @@ public class FacebookLC15_3Sum {
         FacebookLC15_3Sum l = new FacebookLC15_3Sum();
         l.threeSum(new int[]{-1,0,1,2,-1,-4});
     }
-
 }

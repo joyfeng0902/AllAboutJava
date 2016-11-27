@@ -1,4 +1,4 @@
-package main;
+package main.java;
 
 public class FacebookLC125ValidPalindrome {
     public boolean isPalindrome(String s) {

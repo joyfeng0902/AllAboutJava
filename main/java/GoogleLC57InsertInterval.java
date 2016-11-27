@@ -17,7 +17,7 @@ public class GoogleLC57InsertInterval {
         // |---newInterval---|    |---curr---|
         // has overlapping
         for (int i = 0; i < intervals.size(); i++) {
-            // becasue you do not new the newInterval start, you have to consider all cases
+            // because you do not new the newInterval start, you have to consider all cases
             Interval curr = intervals.get(i);
             if (curr.end < newInterval.start) {
                 result.add(curr);

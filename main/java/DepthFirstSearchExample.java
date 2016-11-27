@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Stack;
 
 //Depth-first search (DFS) is an algorithm (or technique) for traversing a graph.
-
 public class DepthFirstSearchExample {
     List<GraphNode> nodes = new ArrayList<GraphNode>();
 

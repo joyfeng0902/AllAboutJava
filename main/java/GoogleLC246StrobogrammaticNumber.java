@@ -27,7 +27,7 @@ public class GoogleLC246StrobogrammaticNumber {
         int length = num.length();
         int low = 0, high = length-1;
 
-        while(low < high) {
+        while(low <= high) {  // "=" to check if num is 1 digit like 2
             if (!map.containsKey(num.charAt(low)) || !map.get(num.charAt(low)).equals(num.charAt(high))) {
                 return false;
             }

@@ -1,7 +1,9 @@
-package main;
+package main.java;
 
 public class FacebookLC91DecodeWays {
     // using DP
+    // changing function:
+    // dp[i] = dp[i-1] if s.charAt(i-1) > '0' + dp[i-2] if s.substring(i-1, i+1) is with in [10, 26]
     public int numDecodings(String s) {
         if (s == null || s.length() == 0 || s.charAt(0) == '0') {
             return 0;
@@ -28,10 +30,10 @@ public class FacebookLC91DecodeWays {
 
         for (int i = 2; i < s.length(); i++) {
             if (s.charAt(i) > '0') {
-                dp[i] += dp[i-1];
+                dp[i] = dp[i-1];
             }
             int val = Integer.parseInt(s.substring(i-1, i+1));
-            if (i >= 2 && val >= 10 && val <= 26) {
+            if (val >= 10 && val <= 26) {
                 dp[i] += dp[i-2];
             }
         }
@@ -43,5 +45,6 @@ public class FacebookLC91DecodeWays {
         FacebookLC91DecodeWays f = new FacebookLC91DecodeWays();
         f.numDecodings("10");
         f.numDecodings("1");
+        f.numDecodings("00");
     }
 }

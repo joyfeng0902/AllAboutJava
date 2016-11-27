@@ -41,7 +41,6 @@ public class FacebookLC78Subsets {
                 tmp.add(num);
                 result.add(tmp);
             }
-
         }
         return result;
     }

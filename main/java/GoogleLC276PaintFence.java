@@ -13,22 +13,17 @@ public class GoogleLC276PaintFence {
     // 综合的思想就是，第三根栅栏或者与第一根栅栏的颜色不同，或者与第二根的栅栏颜色不同。
     // 除了递推，还要考虑base 情况
     public int numWays(int n, int k) {
-        if (n == 0 || k == 0) {
-            return 0;
+        int[] dp = {0, k, k*k, 0};
+
+        if (n <= 2) {
+            return dp[n];
         }
-        if (n == 1) {
-            return k;
-        }
-        if (n == 2) {
-            return k*k;
-        }
-        int dp1 = k, dp2 = k*k, dp3 = k;
         for (int i = 3; i <= n; i++) {
-            dp3 = (dp1 + dp2) * (k-1);
-            dp1 = dp2;
-            dp2 = dp3;
+            dp[3] = (dp[1] + dp[2]) * (k-1);
+            dp[1] = dp[2];
+            dp[2] = dp[3];
         }
 
-        return dp3;
+        return dp[3];
     }
 }

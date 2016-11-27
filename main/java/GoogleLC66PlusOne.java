@@ -14,7 +14,7 @@ public class GoogleLC66PlusOne {
                 digits[i] += 1;
                 return digits;
             } else {  /// 999
-                // each digit is 9
+                // each digit is 9, because otherwise it would return a number already
                 digits[i] = 0;
                 result[i+1] = 0;
             }

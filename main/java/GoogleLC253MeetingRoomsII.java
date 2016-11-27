@@ -29,12 +29,11 @@ public class GoogleLC253MeetingRoomsII {
         // Using PriorityQueue to sort the end time asc
         // Creates a PriorityQueue that orders its elements according to their natural ordering.
         PriorityQueue<Integer> queue = new PriorityQueue<Integer>();
-        queue.offer(intervals[0].end);
-        for (int i = 1; i < intervals.length; i++) {
-            if (intervals[i].start >= queue.peek()) {
+        for (int i = 0; i < intervals.length; i++) {
+            queue.offer(intervals[i].end);
+            if (i >=0 && intervals[i].start >= queue.peek()) {
                 queue.poll();  // leave and give the room to i
             }
-            queue.offer(intervals[i].end);
         }
         return queue.size();
     }

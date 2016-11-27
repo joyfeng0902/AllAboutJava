@@ -13,7 +13,7 @@ public class GoogleLC200NumberofIslands {
         boolean[][] visited = new boolean[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                if (!visited[i][j] && grid[i][j] == '1') {
+                if (!visited[i][j] && grid[i][j] == '1') {  // if not visited using BFS and value is 1, it is a island
                     res++;
                     helper(grid, visited, m, n, i, j);
                 }
