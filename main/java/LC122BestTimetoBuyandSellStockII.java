@@ -1,3 +1,5 @@
+package main.java;
+
 public class LC122BestTimetoBuyandSellStockII {
     public int maxProfit(int[] prices) {
         //greedy algorithm

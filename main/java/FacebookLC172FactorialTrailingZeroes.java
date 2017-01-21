@@ -1,4 +1,4 @@
-package main;
+package main.java;
 
 public class FacebookLC172FactorialTrailingZeroes {
     public int trailingZeroes(int n) {
